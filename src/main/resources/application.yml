@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/mydb
     username: root
-    password: Giaguar1.27
+    password: password
   jpa:
     database: mysql
     show-sql: true
