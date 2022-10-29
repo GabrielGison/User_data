@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "77ff7ce4-e3f8-4fff-94f2-d67c5d7b3e09",
+		"name": "User_data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20611498"
+	},
+	"item": [
+		{
+			"name": "Create New",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"GisonSensei\",\r\n\"email\": \"d.gabrielvalentin@gmail.com\",\r\n\"pass\": \"giagua12\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/c?name =Gison&email=djashd@gmail.co&pass=giagua21",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"c"
+					],
+					"query": [
+						{
+							"key": "name ",
+							"value": "Gison"
+						},
+						{
+							"key": "email",
+							"value": "djashd@gmail.co"
+						},
+						{
+							"key": "pass",
+							"value": "giagua21"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Guest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/c",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Read by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ri/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ri",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by Username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rn/?username=GisonSensei",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rn",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "GisonSensei"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/re/?email=d.gabrielvalentin@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"re",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "d.gabrielvalentin@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rt?type=Guest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rt"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Guest"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Username",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/un/1?username=gg",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"un",
+						"1"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "gg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Email",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ue/1?email=gg@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ue",
+						"1"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "gg@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/up/1?pass=gg1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"up",
+						"1"
+					],
+					"query": [
+						{
+							"key": "pass",
+							"value": "gg1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/di/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"di",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/da",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"da"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"co.moonlink.Emuns","l":"Type"},{"p":"co.moonlink.Entities","l":"User"},{"p":"co.moonlink.Controllers","l":"UserController"},{"p":"co.moonlink","l":"UserDataApplication"},{"p":"co.moonlink.Repositories","l":"Users"},{"p":"co.moonlink.Services","l":"UserService"}]
